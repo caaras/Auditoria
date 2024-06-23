@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'amazondb_a0w4',
         'USER': 'amazondb_a0w4_user',
         'PASSWORD': 'QJesQtv3h8h4OrKBCyEBLXAosIvIfPkw',
-        'HOST': 'dpg-cprpjgg8fa8c738sehcg-a.oregon-postgres.render.com',
+        'HOST': 'dpg-cprpjgg8fa8c738sehcg-a',
         'PORT': '5432',
     }
 }
@@ -123,7 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = "Amazon/webapp/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'webapp/static')]
 
