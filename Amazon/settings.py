@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@xj^h6h9ze8^(0=e-oajg_)v*yq!hretco@hf6mmus+chkj(^7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -70,12 +70,6 @@ TEMPLATES = [
         },
     },
 ]
-
-EMAIL_HOST = 'smtp.googlemail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'kp681129@gmail.com'
-EMAIL_HOST_PASSWORD = '958433340'
-EMAIL_USE_TLS = True
 
 WSGI_APPLICATION = 'Amazon.wsgi.application'
 
@@ -129,6 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+STATIC_ROOT = "Amazon/webapp/static/"
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'webapp/static')]
 
